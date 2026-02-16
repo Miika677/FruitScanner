@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Fruit Scanner</title>
+</head>
+<body>
+        <div class="position-relative mt-5 mx-auto" style="width: 600px;">
+            <div class="card p-4">
+                <h1>Fruit Scanner</h1>
+                <h2>Upload an image to automatically generate its price tag.</h2>
+
+                <form method="POST" action="{{url_for("sticker")}}" enctype="multipart/form-data" class="d-flex flex-nowrap align-items-center">
+                    <input type="file" name="image" accept="image/*" class="text-truncate small text-muted mt-1 file-name">
+                    <input type="text" name="weight_grams" placeholder="Weight in grams">
+                    <button class="btn btn-primary text-nowrap" type="submit">Price Tag</button>
+                </form>
+
+            </div> 
+            {% if error %}
+            <div class="alert alert-warning w-100" role="alert">
+                {{errormsg}}
+            </div>
+            {% endif %}
+            <p>Fruit in stock:<br></p>
+            <ul>
+                {% for fruititem in fruitlist %}
+                    {% if fruititem != "unknown" %}
+                    <li>{{ fruititem }}</li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+</body>
+</html>
