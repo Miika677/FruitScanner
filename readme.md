@@ -9,12 +9,12 @@ In this demo environment, the "customer", instead of putting the fruit on the sc
 In a real world environment, the process would go along the lines of this: Upon pressing a button to print out the price tag for the item, the scale equipped with a camera would capture an image of the fruit and use it instead, along with the weight of the item.
 The price tag being generated here uses a locally-based GTIN-barcode format.
 
-# Setup
+## Setup
 
 After cloning the repo and installing requirements.txt in your venv, create a .env file with your API key (API_KEY=...). After this you may run the app with "flask run".
 
 For a list of fruits "in stock" refer to labels.py.
 
-# Example Price Tag Sticker
+## Example Price Tag Sticker
 
 ![An example sticker for a banana.](assets/examplesticker.png)
