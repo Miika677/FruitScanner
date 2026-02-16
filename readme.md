@@ -13,7 +13,7 @@ The price tag being generated here uses a locally-based GTIN-barcode format.
 
 After cloning the repo and installing requirements.txt in your venv, create a .env file with your API key (API_KEY=...). After this you may run the app with "flask run".
 
-For a list of fruits refer to labels.py.
+For a list of fruits "in stock" refer to labels.py.
 
 # Example Price Tag Sticker
 
