@@ -1,6 +1,6 @@
 # Fruit Scanner Demo Concept
 
-A proof-of-concept for an AI-supplemented self-checkout fruit/vegetable weighing scale.
+A proof-of-concept for an AI-supplemented self-checkout fruit/vegetable weighing scale, for ease of use and shoplifting reduction.
 
 Automatically selects which item is being weighed for its price tag through an AI model (Gemini 2.5 Flash). The model chooses the matching fruit from a list of fruits in stock.
 
