@@ -2,7 +2,7 @@
 
 A proof-of-concept for an AI-supplemented self-checkout fruit/vegetable weighing scale, for ease of use and shoplifting reduction.
 
-Automatically selects which item is being weighed for its price tag through an AI model (Gemini 2.5 Flash). The model chooses the matching fruit from a list of fruits in stock.
+Using computer vision, automatically selects which item is being weighed for its price tag through an AI model (Gemini 2.5 Flash). The model chooses the matching fruit from a list of fruits in stock.
 
 In this demo environment, the "customer", instead of putting the fruit on the scale to be weighted, uploads an image and inputs the weight in the form on the website.
 
